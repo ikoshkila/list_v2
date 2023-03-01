@@ -17,7 +17,7 @@ int lst_max(std::vector<int> lst){
         return 0;
     }
     int max = -2147483648;
-    for(int i=0; i<lst.size(); i++){
+    for(long long i=0; i<lst.size(); i++){
         if(lst[i] > max){
             max = lst[i];
         }
@@ -30,7 +30,7 @@ int lst_min(std::vector<int> lst){
         return 0;
     }
     int min = 2147483647;
-    for(int i=0; i<lst.size(); i++){
+    for(long long i=0; i<lst.size(); i++){
         if(lst[i] < min){
             min = lst[i];
         }
