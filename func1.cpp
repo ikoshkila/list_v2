@@ -1,8 +1,8 @@
 #include "middle_list.h"
 
 long itc_sum_even_lst(const std::vector<int> &lst){
-    long o = 0;
-    for(int i=0; i<lst.size(); i++){
+    long long o = 0;
+    for(long long i=0; i<lst.size(); i++){
         if(i % 2 == 0){
             o += lst[i];
         }
@@ -11,8 +11,8 @@ long itc_sum_even_lst(const std::vector<int> &lst){
 }
 
 long itc_sum_even_part_lst(const std::vector<int> &lst){
-    long o = 0;
-    for(int i=0; i<lst.size(); i++){
+    long long o = 0;
+    for(long long i=0; i<lst.size(); i++){
         if(lst[i] % 2 == 0){
             o += lst[i];
         }
@@ -21,7 +21,7 @@ long itc_sum_even_part_lst(const std::vector<int> &lst){
 }
 
 void itc_odd_even_separator_lst(const std::vector<int> &lst, std::vector<int> &lst1, std::vector<int> &lst2){
-    for(int i=0; i<lst.size(); i++){
+    for(long long i=0; i<lst.size(); i++){
         if(lst[i] % 2 == 0){
             lst1.push_back(lst[i]);
         }else{
@@ -31,7 +31,7 @@ void itc_odd_even_separator_lst(const std::vector<int> &lst, std::vector<int> &l
 }
 
 void itc_pos_neg_separator_lst(const std::vector<int> &lst, std::vector<int> &lst1, std::vector<int> &lst2, std::vector<int> &lst3){
-    for(int i=0; i<lst.size(); i++){
+    for(long long i=0; i<lst.size(); i++){
         if(lst[i] < 0){
             lst1.push_back(lst[i]);
         }
