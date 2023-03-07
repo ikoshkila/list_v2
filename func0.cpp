@@ -1,6 +1,6 @@
 #include "middle_list.h"
 
-std::vector<char> itc_strlist(std::string str){
+std::vector<char> itc_strtlist(std::string str){
     std::vector<char> o;
     for(long long i=0; str[i] != '\0'; i++){
         o.push_back(str[i]);
@@ -10,9 +10,10 @@ std::vector<char> itc_strlist(std::string str){
 
 std::string itc_join(std::vector<char> lst, std::string sep){
     std::string o;
-    for(long long i=0; i<lst.size(); i++){
+    for(long long i=0; i<lst.size()-1; i++){
         o += lst[i] + sep;
     }
+    o += lst[lst.size()];
     return o;
 }
 
