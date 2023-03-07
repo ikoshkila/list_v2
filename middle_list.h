@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-std::vector<char> itc_strlist(std::string str);
+std::vector<char> itc_strtlist(std::string str);
 std::string itc_join(std::vector<char> lst, std::string sep);
 std::string itc_rmstrspc(std::string str);
 std::string itc_rmstrchar(std::string str, std::string less);
