@@ -10,13 +10,13 @@ std::vector<char> itc_strtlist(std::string str){
 
 std::string itc_join(std::vector<char> lst, std::string sep){
     if(lst.size() == 0){
-        return ""
+        return "";
     }
     std::string o;
     for(long long i=0; i<lst.size()-1; i++){
         o += lst[i] + sep;
     }
-    o += lst[lst.size()];
+    o += lst[lst.size()-1];
     return o;
 }
 
